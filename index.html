@@ -391,6 +391,35 @@
     font-size: 14.5px; line-height: 1.7; color: var(--muted);
     margin: 0;
   }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 56px;
+    border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+  }
+  .stat-item {
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
 
   /* RESPONSIVE */
   @media (max-width: 720px) {
@@ -405,6 +434,7 @@
     .about-achiev-full { grid-column: 1; }
     .skill-row { grid-template-columns: 1fr; gap: 16px; }
     .clients-grid, .contact-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
   }
 
 </style>
@@ -483,6 +513,37 @@
         <div class="about-achiev">
           <h4>Acquisition that gets cheaper, not more expensive</h4>
           <p>I rebuild ad and lifecycle messaging around the real buyer, so cost per lead drops and sales spends less time chasing the wrong accounts.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Landing pages built</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Product positioning, zero to one</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">300%</span>
+          <span class="stat-label">Increase in organic traffic</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Case studies written</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">Blogs and guides published</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Marketing assets created</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">GTM strategies launched</span>
         </div>
       </div>
     </div>
