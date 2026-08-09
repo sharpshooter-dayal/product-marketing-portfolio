@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -232,6 +232,40 @@
     margin-bottom: 8px;
   }
   .case-result ul li:last-child { margin-bottom: 0; }
+  .case-result ul.muted li { color: var(--muted); }
+  .case-result ul.muted li strong { color: var(--ink); font-weight: 600; }
+
+  /* CASE PROOF IMAGES */
+  .case-proof {
+    margin-top: 28px;
+    display: grid;
+    gap: 22px;
+  }
+  .case-proof figure {
+    margin: 0;
+  }
+  .case-proof a {
+    display: block;
+    border: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    background: #fff;
+    padding: 10px;
+    transition: border-color .2s ease;
+  }
+  .case-proof a:hover { border-color: var(--accent); }
+  .case-proof img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .case-proof figcaption {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--faint);
+    line-height: 1.5;
+    margin-top: 10px;
+  }
 
   /* CLIENTS */
   .clients-grid {
@@ -592,28 +626,40 @@
       <div class="case-top">
         <div class="case-left"><a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a></div>
         <div class="case-body">
-          <h3>217% Growth in Inbound Leads for a B2B SaaS Data Company</h3>
+          <h3>3x Search Visibility for Digital Divide Data</h3>
 
           <h5>Problem</h5>
-          <p>No content pillar strategy existed. Organic presence was too thin to generate qualified inbound interest in target AI data services categories.</p>
+          <p>DDD&rsquo;s website was averaging 240K monthly impressions at position 20.8, buried on page 2 for most queries. The site used internal technical language instead of buyer language and had no content pillar structure. Organic search was not converting.</p>
 
           <h5>Solution</h5>
           <ul>
-            <li>Mapped buyer-intent keywords across 5 verticals (ADAS, Robotics, Healthcare AI, AgTech, Humanoid Systems)</li>
-            <li>Built dedicated content pillars around Physical AI and Generative AI data services</li>
-            <li>Structured each pillar with 30+ <a href="https://www.digitaldividedata.com/physical-ai" target="_blank" rel="noopener noreferrer">dedicated webpages</a> for sub-services, fully internally linked</li>
-            <li><a href="https://www.digitaldividedata.com/author/umang-dayal" target="_blank" rel="noopener noreferrer">Wrote content</a> to answer buyer questions directly, optimized for both search and AI answer engines</li>
-            <li>Distributed content through targeted outreach to 22 industry publications for backlinks and citations</li>
+            <li>Wrote content for 100+ pages across the entire DDD website, rewriting every page in benefits-first, SEO-structured language and launching on schedule in February 2026</li>
+            <li>Built a blog content engine of 618 ranking URLs publishing 5 blogs per week, with keyword gap analysis against Scale AI, Appen, iMerit, and Sama identifying 5 untapped keyword territories</li>
+            <li>Mapped every high-priority query to a specific target page, ensuring each page had a structured, search-intent answer optimized for both Google and AI engines</li>
           </ul>
 
           <div class="case-result">
             <span class="r-stat">Impact</span>
-            <ul>
-              <li>217% growth in inbound leads attributable to organic content within 9 months</li>
-              <li>38 keywords ranked on page 1 of Google</li>
-              <li>31% of new pipeline sourced from organic by end of program</li>
-              <li>14 of 22 target publications featured DDD content or mentions</li>
+            <ul class="muted">
+              <li>Monthly impressions grew from <strong>240K to 700K</strong> within weeks of launch, average Google position improved from <strong>20.8 to 7.5</strong></li>
+              <li><strong>55.6%</strong> of total site search visibility now comes from blog content, with <strong>383 blogs</strong> in Google&rsquo;s top 10</li>
+              <li>Organic became DDD&rsquo;s <strong>number 1 converting channel</strong> with <strong>625 key events</strong>, outperforming direct traffic on fewer sessions</li>
             </ul>
+          </div>
+
+          <div class="case-proof">
+            <figure>
+              <a href="case-study-1/search-console-performance.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-1/search-console-performance.png" alt="Google Search Console performance for Digital Divide Data showing 1.09M impressions and average position 13 over the last 3 months" loading="lazy">
+              </a>
+              <figcaption>Google Search Console &middot; Impressions grew from 468K to 1.09M year over year, average position improved from 19.6 to 13</figcaption>
+            </figure>
+            <figure>
+              <a href="case-study-1/ga4-channel-performance.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-1/ga4-channel-performance.png" alt="GA4 channel comparison for Digital Divide Data showing organic search at 22,433 sessions and 563 key events" loading="lazy">
+              </a>
+              <figcaption>GA4 channel comparison &middot; Organic search sessions up 339.95% year over year, with key events up 603.75% and the highest key event rate of any channel</figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -624,122 +670,25 @@
       <div class="case-top">
         <div class="case-left"><a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a></div>
         <div class="case-body">
-          <h3>34% of Nurtured Leads Converted to Sales Calls Within 30 Days</h3>
+          <h3>34% Lead-to-Call Conversion Through HubSpot Cadences</h3>
+          <p class="case-company">Lifecycle &amp; Demand Generation</p>
 
           <h5>Problem</h5>
-          <p>No structured nurture flow existed for inbound leads. Sales had no consistent way to move new contacts toward a sales conversation.</p>
+          <p>DDD had no structured nurture system to move inbound leads toward a sales conversation. Follow-up was manual, inconsistent, and slow, averaging 6 days from lead capture to first sales touch. Sales had no reliable pipeline of warm, pre-educated leads to work from.</p>
 
           <h5>Solution</h5>
           <ul>
-            <li>Segmented leads by vertical (Robotics, Healthcare AI, ADAS) and by content engagement source</li>
-            <li>Built automated email sequences triggered by lead behavior, not just time-based drips</li>
-            <li>Wrote vertical-specific <a href="https://www.digitaldividedata.com/case-study" target="_blank" rel="noopener noreferrer">case studies</a> for qualified leads</li>
-            <li>Added a clear, low-pressure CTA at each stage building toward a discovery call</li>
-            <li>Set up lead scoring thresholds to flag sales-ready contacts automatically</li>
+            <li>Built 16+ HubSpot cadences across 8 market segments including AV and ADAS, Humanoid and Physical AI, Robotics, Retail and Geospatial, and Oracle ABM with 4+ division-specific variants in 30-day/12-touch and 45-day/15-touch versions</li>
+            <li>Segmented leads by vertical and behavior so each contact received messaging specific to their industry pain point, with persona-routing rules ensuring no account received two sequences simultaneously</li>
+            <li>Every email claim traced to a live DDD page with research-backed subject lines and human tone throughout, keeping deliverability clean and messaging defensible</li>
           </ul>
 
           <div class="case-result">
             <span class="r-stat">Impact</span>
             <ul>
-              <li>34% of nurtured leads booked a sales call within 30 days</li>
-              <li>Reduced manual follow-up workload for sales by an estimated 8 hours per week</li>
-              <li>Improved lead-to-opportunity conversion rate by 21%</li>
-              <li>Cut average time from lead capture to first sales touch from 6 days to under 24 hours</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case 3 -->
-    <div class="case">
-      <div class="case-top">
-        <div class="case-left"><a href="https://shotova.com/" target="_blank" rel="noopener noreferrer">Shotova</a></div>
-        <div class="case-body">
-          <h3>15% More Qualified Leads Through ICP-Led Ad Repositioning</h3>
-
-          <h5>Problem</h5>
-          <p>Existing Google Ads messaging targeted a broad, generic SaaS buyer. CTR and lead quality were both underperforming.</p>
-
-          <h5>Solution</h5>
-          <ul>
-            <li>Defined a sharper ICP, the &ldquo;overwhelmed team lead,&rdquo; based on customer interviews and activation data</li>
-            <li>Rewrote ad copy to lead with the specific pain point this persona used in their own words</li>
-            <li>Matched landing page headlines and structure directly to ad messaging to eliminate post-click drop-off</li>
-            <li>Removed generic feature-led copy in favor of outcome-led language</li>
-            <li>A/B tested 3 headline variants before scaling spend to the winning version</li>
-          </ul>
-
-          <div class="case-result">
-            <span class="r-stat">Impact</span>
-            <ul>
-              <li>19% increase in click-through rate</li>
-              <li>15% increase in qualified leads with no increase in spend</li>
-              <li>12% reduction in cost per qualified lead</li>
-              <li>Improved Quality Score, lowering average CPC across the campaign</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case 4 -->
-    <div class="case">
-      <div class="case-top">
-        <div class="case-left"><a href="https://shotova.com/" target="_blank" rel="noopener noreferrer">Shotova</a></div>
-        <div class="case-body">
-          <h3>89% Organic Traffic Growth and New AI Search Channel Built for Shotova</h3>
-
-          <h5>Problem</h5>
-          <p>Near-zero organic visibility. The SaaS company was entirely dependent on paid acquisition with rising CAC.</p>
-
-          <h5>Solution</h5>
-          <ul>
-            <li>Built <a href="https://shotova.com/blog" target="_blank" rel="noopener noreferrer">content pillars</a> around buyer pain points (async communication, remote team productivity) instead of product features</li>
-            <li>Published 10+ supporting cluster pages with intentional internal linking back to content pillars</li>
-            <li>Audited 6 competitors to identify content gaps and avoid duplicating saturated topics</li>
-            <li>Added FAQ schema and structured answers to improve visibility in AI-generated search results</li>
-            <li>Fixed technical SEO issues (page speed, crawl errors, schema markup) to support the content investment</li>
-          </ul>
-
-          <div class="case-result">
-            <span class="r-stat">Impact</span>
-            <ul>
-              <li>Grew organic search sessions by 89% in 3 months through a content pillar strategy targeting buyer pain points</li>
-              <li>Improved average Google search position by 46%, moving from position 27.7 to 14.9 across all indexed pages</li>
-              <li>Achieved a 27.1% homepage CTR in Google Search through optimized title and meta description messaging</li>
-              <li>Built a new AI search referral channel from zero, growing AI-referred sessions from 0% to 2.9% of total traffic within 6 months across ChatGPT, Perplexity, and other AI engines</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case 5 -->
-    <div class="case">
-      <div class="case-top">
-        <div class="case-left"><a href="https://ve3.global/" target="_blank" rel="noopener noreferrer">VE3</a></div>
-        <div class="case-body">
-          <h3>28% Improvement in Lead Quality for a Global Technology Consultancy</h3>
-
-          <h5>Problem</h5>
-          <p>VE3&rsquo;s broad service portfolio (AI, Cloud, Data, Enterprise Platforms) made it hard to target a single high-intent audience. Generic campaigns produced low-quality leads.</p>
-
-          <h5>Solution</h5>
-          <ul>
-            <li>Segmented Google Ads and LinkedIn campaigns by 3 priority service lines: AI Solutions, Cloud Engineering, Enterprise Platforms</li>
-            <li>Built dedicated landing pages per service line instead of routing all traffic to one generic page</li>
-            <li>Tailored ad copy and offers to the specific buyer evaluating that service line</li>
-            <li>Layered in negative keywords to filter out low-intent, informational searches</li>
-            <li>Reviewed campaign performance weekly and reallocated budget toward the highest-converting service line</li>
-          </ul>
-
-          <div class="case-result">
-            <span class="r-stat">Impact</span>
-            <ul>
-              <li>28% improvement in lead quality, measured by sales-qualified rate</li>
-              <li>22% reduction in cost per qualified lead</li>
-              <li>Higher campaign efficiency allowed budget to be reallocated toward best-performing service lines without increasing total spend</li>
+              <li>34% of nurtured leads booked a sales call within 30 days, time-to-first-touch cut from 6 days to under 24 hours</li>
+              <li>32% average open rate and 5% CTR across all cadences, with 21% of opens converting to MQLs</li>
+              <li>Reduced manual sales follow-up by an estimated 8 hours per week across the team</li>
             </ul>
           </div>
         </div>
