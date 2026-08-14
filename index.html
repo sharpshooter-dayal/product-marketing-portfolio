@@ -237,9 +237,9 @@
 
   /* CASE PROOF IMAGES */
   .case-proof {
-    margin-top: 28px;
+    margin-top: 18px;
     display: grid;
-    gap: 22px;
+    gap: 16px;
   }
   .case-proof figure {
     margin: 0;
@@ -249,7 +249,7 @@
     border: 1px solid var(--rule-strong);
     border-bottom: 1px solid var(--rule-strong);
     background: #fff;
-    padding: 10px;
+    padding: 8px;
     transition: border-color .2s ease;
   }
   .case-proof a:hover { border-color: var(--accent); }
@@ -260,11 +260,12 @@
   }
   .case-proof figcaption {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.04em;
+    font-size: 10px;
+    letter-spacing: 0.03em;
     color: var(--faint);
-    line-height: 1.5;
-    margin-top: 10px;
+    line-height: 1.45;
+    margin-top: 8px;
+    text-transform: none;
   }
 
   /* CLIENTS */
@@ -624,7 +625,24 @@
     <!-- Case 1 -->
     <div class="case">
       <div class="case-top">
-        <div class="case-left"><a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a></div>
+        <div class="case-left">
+          <a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a>
+
+          <div class="case-proof">
+            <figure>
+              <a href="case-study-1/search-console-performance.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-1/search-console-performance.png" alt="Google Search Console performance for Digital Divide Data showing 1.09M impressions and average position 13 over the last 3 months" loading="lazy">
+              </a>
+              <figcaption>Google Search Console &middot; Impressions grew from 468K to 1.09M year over year, average position improved from 19.6 to 13</figcaption>
+            </figure>
+            <figure>
+              <a href="case-study-1/ga4-channel-performance.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-1/ga4-channel-performance.png" alt="GA4 channel comparison for Digital Divide Data showing organic search at 22,433 sessions and 563 key events" loading="lazy">
+              </a>
+              <figcaption>GA4 channel comparison &middot; Organic search sessions up 339.95% year over year, with key events up 603.75% and the highest key event rate of any channel</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="case-body">
           <h3>3x Search Visibility for Digital Divide Data</h3>
 
@@ -646,21 +664,6 @@
               <li>Organic became DDD&rsquo;s <strong>number 1 converting channel</strong> with <strong>625 key events</strong>, outperforming direct traffic on fewer sessions</li>
             </ul>
           </div>
-
-          <div class="case-proof">
-            <figure>
-              <a href="case-study-1/search-console-performance.png" target="_blank" rel="noopener noreferrer">
-                <img src="case-study-1/search-console-performance.png" alt="Google Search Console performance for Digital Divide Data showing 1.09M impressions and average position 13 over the last 3 months" loading="lazy">
-              </a>
-              <figcaption>Google Search Console &middot; Impressions grew from 468K to 1.09M year over year, average position improved from 19.6 to 13</figcaption>
-            </figure>
-            <figure>
-              <a href="case-study-1/ga4-channel-performance.png" target="_blank" rel="noopener noreferrer">
-                <img src="case-study-1/ga4-channel-performance.png" alt="GA4 channel comparison for Digital Divide Data showing organic search at 22,433 sessions and 563 key events" loading="lazy">
-              </a>
-              <figcaption>GA4 channel comparison &middot; Organic search sessions up 339.95% year over year, with key events up 603.75% and the highest key event rate of any channel</figcaption>
-            </figure>
-          </div>
         </div>
       </div>
     </div>
@@ -668,7 +671,24 @@
     <!-- Case 2 -->
     <div class="case">
       <div class="case-top">
-        <div class="case-left"><a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a></div>
+        <div class="case-left">
+          <a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer">Digital Divide Data</a>
+
+          <div class="case-proof">
+            <figure>
+              <a href="case-study-2/sequence-insights.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-2/sequence-insights.png" alt="HubSpot sequence insights showing 47 total enrollments, an 8.51% meeting rate with 4 meetings booked, and a 27.66% reply rate with 13 replies" loading="lazy">
+              </a>
+              <figcaption>HubSpot sequence insights &middot; 47 contacts enrolled, 27.66% reply rate and 4 meetings booked from a single cadence</figcaption>
+            </figure>
+            <figure>
+              <a href="case-study-2/email-performance.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-2/email-performance.png" alt="HubSpot email performance for the last 30 days showing 9 sent, 8 opened, 3 clicks and a 33.33% click rate" loading="lazy">
+              </a>
+              <figcaption>HubSpot email performance &middot; Last 30 days, 8 of 9 sends opened with a 33.33% click rate</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="case-body">
           <h3>34% Lead-to-Call Conversion Through HubSpot Cadences</h3>
           <p class="case-company">Lifecycle &amp; Demand Generation</p>
@@ -685,10 +705,52 @@
 
           <div class="case-result">
             <span class="r-stat">Impact</span>
-            <ul>
-              <li>34% of nurtured leads booked a sales call within 30 days, time-to-first-touch cut from 6 days to under 24 hours</li>
-              <li>32% average open rate and 5% CTR across all cadences, with 21% of opens converting to MQLs</li>
-              <li>Reduced manual sales follow-up by an estimated 8 hours per week across the team</li>
+            <ul class="muted">
+              <li><strong>34%</strong> of nurtured leads booked a sales call within 30 days, time-to-first-touch cut from <strong>6 days to under 24 hours</strong></li>
+              <li><strong>32%</strong> average open rate and <strong>5%</strong> CTR across all cadences, with <strong>21%</strong> of opens converting to MQLs</li>
+              <li>Reduced manual sales follow-up by an estimated <strong>8 hours per week</strong> across the team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="case">
+      <div class="case-top">
+        <div class="case-left">
+          <a href="https://shotova.com/" target="_blank" rel="noopener noreferrer">Shotova</a>
+
+          <div class="case-proof">
+            <figure>
+              <a href="case-study-3/shotova-canvas.png" target="_blank" rel="noopener noreferrer">
+                <img src="case-study-3/shotova-canvas.png" alt="Shotova Canvas view showing a single product photo branching into virtual model photography, ghost mannequin, product angles, social media creative, product title and description, and video ad" loading="lazy">
+              </a>
+              <figcaption>The Shotova Canvas &middot; One product photo upload branches into virtual model, ghost mannequin, product angles, social creative, description, and video in a single workspace</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3>Repositioning Shotova from tool based platform to an Infinite Canvas</h3>
+          <p class="case-company">Product Positioning &amp; GTM</p>
+
+          <h5>Problem</h5>
+          <p>Shotova&rsquo;s AI tools for image generation, ghost mannequin, product angles, video, and descriptions each lived separately. Discovery calls revealed the real frustration: customers were losing more time switching between tools, and all competitors provided the same features.</p>
+
+          <h5>Solution</h5>
+          <ul>
+            <li>Ran ICP discovery calls to map the exact workflow pain and identified &ldquo;tool switching&rdquo; as the primary friction point</li>
+            <li>Used those insights to define a new positioning angle: not a collection of AI tools, but a single canvas where every step of product content creation happens in one place</li>
+            <li>Repositioned Shotova around a single Canvas: one product photo upload generates image, ghost mannequin, product angles, social post, description, and video automatically</li>
+            <li>Rewrote all messaging and ad copy around the outcome (minutes, not hours) rather than individual features</li>
+          </ul>
+
+          <div class="case-result">
+            <span class="r-stat">Impact</span>
+            <ul class="muted">
+              <li>Reduced average customer processing time by <strong>70%</strong>, from multi-tool hours to Canvas minutes</li>
+              <li>Conversion rate improved <strong>32%</strong> after Canvas messaging replaced feature-led positioning on landing pages</li>
+              <li>Customer retention improved <strong>28%</strong> as the unified experience reduced friction and increased platform stickiness</li>
             </ul>
           </div>
         </div>
@@ -832,19 +894,19 @@
     </div>
 
     <div class="role">
-      <div class="role-date">2025&ndash;Present</div>
-      <div class="role-main">
-        <h4>Product Marketing Manager</h4>
-        <span class="co">Shotova</span>
-        <p>Built positioning frameworks using April Dunford&rsquo;s method, ran synchronized launch campaigns, grew organic traffic 89%, improved Google position 46%, and built a new AI search referral channel from zero.</p>
-      </div>
-    </div>
-    <div class="role">
-      <div class="role-date">2022&ndash;2025</div>
+      <div class="role-date">2024&ndash;Present</div>
       <div class="role-main">
         <h4>Product Marketing Manager</h4>
         <span class="co">RB Contrive</span>
         <p>Led GTM, content, and lifecycle programs for B2B SaaS clients including a 100+ page website revamp for Digital Divide Data, building 618 ranking URLs, 16+ HubSpot cadences, and establishing DDD as a cited source in ChatGPT, Gemini, and Perplexity.</p>
+      </div>
+    </div>
+    <div class="role">
+      <div class="role-date">2022&ndash;2024</div>
+      <div class="role-main">
+        <h4>Product Marketing Manager</h4>
+        <span class="co">Shotova</span>
+        <p>Built positioning frameworks using April Dunford&rsquo;s method, ran synchronized launch campaigns, grew organic traffic 89%, improved Google position 46%, and built a new AI search referral channel from zero.</p>
       </div>
     </div>
     <div class="role">
@@ -930,7 +992,7 @@
       </div>
       <div class="contact-item">
         <span class="label">Resume</span>
-        <a href="https://drive.google.com/file/d/193AZ4XNdo5vas0yd3MDgAmPT89X5-s2X/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
+        <a href="https://docs.google.com/document/d/1cmz-_gyvO_j5hSUyL3KDB_QGgvGBeoWhPyRo-GEYbUA/edit?usp=sharing" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
 
